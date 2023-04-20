@@ -19,7 +19,44 @@ namespace LabWork3
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnInflation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPopulation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Смена языка на енгельский (Если идея - хуита, то можно потом делитнуть)
+        private void btnLangEN_Click(object sender, EventArgs e)
+        {
+            if (btnInflation.Text != "Inflation" || btnPopulation.Text != "Population" || btnSalary.Text != "Median salary")
+            {
+                btnInflation.Text = "Inflation";
+                btnPopulation.Text = "Population";
+                btnSalary.Text = "Median Salary";
+            }
+        }
+
+        // Смена языка на русский
+        private void btnLangRU_Click(object sender, EventArgs e)
+        {
+            if (btnInflation.Text == "Inflation" || btnPopulation.Text == "Population" || btnSalary.Text == "Median salary")
+            {
+                btnInflation.Text = "Инфляция";
+                btnPopulation.Text = "Население";
+                btnSalary.Text = "Медианная зарплата";
+            }
         }
     }
 }
